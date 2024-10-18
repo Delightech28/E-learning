@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBridge | Home</title>
+    <link rel="stylesheet" href="assets/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+
+    <style>
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        .nav-item{
+            margin-left: 10px;
+            margin-right: 40px;
+            
+        }
+
+        .navbar{
+            background-color: #009688;
+        }
+
+        .navbar-brand{
+            color: #FFFFFF;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .nav-link{
+            color: #FFFFFF;
+        }
+
+        .navbar-toggler{
+            color: #FFFFFF;
+            font-size: 25px;
+        }
+
+        .banner{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-container{
+            position: relative;
+           width: 100%;
+           height: 500px;
+          
+        }
+
+        .banner-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:white;
+            z-index: 2;
+            padding: 10px;
+        }
+
+        .banner-text h1{
+            font-size: 2.5rem;
+            margin: 1rem;
+            font-weight: bold;
+        }
+
+        .banner-text p{
+            font-size: 1.1rem;
+            max-width: 100%;
+        }
+
+        .gradient-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+            z-index: 1;
+        }
+
+        .btn{
+            width: 150px;
+            padding: 10px;
+            background-color: #FF6347;
+            color: #FFFFFF;
+        }
+
+        #featured_img{
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .title{
+            font-weight: bold;
+        }
+        @media (max-width: 576px){
+            
+            .banner-text p{
+                font-size: 0.9rem;
+            }
+            .banner-text h1{
+                font-size: 1.8rem;
+            }
+            
+        }
+
+        @media (max-width: 768px){
+            
+            .banner-text p{
+                font-size: 1rem;
+            }
+            .banner-text h1{
+                font-size: 2rem;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand mx-5">EduBridge</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars "></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a href="#" class="nav-link">TextBook</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Community</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fas fa-user-circle"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Banner-->
+<div class="container-fluid g-0 image-container">
+    <div class="gradient-overlay"></div>
+    <img src="img/The Ultimate Guide To Relocating To Canada From Nigeria As A Student - NaijaGists_com - Motivation, Faith, Natural Health & Relationship.jpeg" alt="banner" class="banner img-fluid">
+    <div class="banner-text text-center col-12">
+    <h1>Unlock a World of Knowledge</h1>
+    <p>Access thousands of TextBooks and resources to enchance your learning experience and connect with a vibrant student community.</p>
+    <a href="#" class="btn">Get Started</a>
+</div>
+</div>
+
+<!--Featured TextBooks-->
+<h2 class="text-center pt-5">Featured TextBooks</h2>
+
+<div class="container">
+     <div class="row text-center justify-content-center pt-3">
+        <div class="col-12 col-md-6 col-lg-3 grid-item">
+            <img src="img/introduction to accounting.png" alt="" id="featured_img">
+            <p class="mt-3 title">Principle of Accounting, Volume 1: Financial Accounting</p>
+        </div> 
+        <div class="col-12 col-md-6 col-lg-3 grid-item">
+            <img src="img/📚 Principles of Microeconomics_.jpeg" alt="" id="featured_img">
+            <p class="mt-3 title">Principle of Microeconomics 3e</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 grid-item">
+            <img src="img/Python Programming_ A Step-by-Step Guide for Absolute Beginners.jpeg" alt="" id="featured_img">
+            <p class="mt-3 title">Introduction to Python Programming</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 grid-item">
+            <img src="img/Philosophy for Beginners_ Introduction to Philosophy - History and Meaning, Basic Philosophical Directions and Methods ebook by Timo Kaschner - Rakuten Kobo.jpeg" alt="" id="featured_img">
+            <p class="mt-3 title">Introduction to Philosophy</p>
+        </div>
+     </div>
+</div>
+<script src="assets/bootstrap.min.js"></script>
+    <script src="assets/all.min.js"></script>
+</body>
+</html>
